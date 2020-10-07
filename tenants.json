@@ -1,0 +1,90 @@
+[
+    {
+        "tenant": "justin",
+        "protected": true,
+        "password": "test123",
+        "uuid": "da02f42a-659e-4ab1-b565-13008c2cc38a",
+        "meta": {
+            "title": "Justin's Gold Shop",
+            "hid": "",
+            "name": "",
+            "description": ""
+        },
+        "components": {
+            "logo": {
+                "on_light": "",
+                "on_dark": "https://piegp.com/dist/images/landing/piegp-logo.png"
+            },
+            "hero": {
+                "show": true,
+                "backgroundImage": "",
+                "backgroundColor": "",
+                "heading": "We are Acmeee",
+                "subheading": "AcmeGP for Runescape & Oldschool Runescape"
+            },
+            "cta": {
+                "buy_gold": {
+                    "show": true
+                }
+            },
+            "accepted_payments": {
+                "show": true,
+                "bitcoin": true,
+                "bank_transfer": true,
+                "mastercard": true,
+                "visa": false,
+                "skrill": true,
+                "paypal": false,
+                "interac": true
+            },
+            "statistics": {
+                "show": true,
+                "clients": 1072,
+                "total_sales": {
+                    "gold": 15000,
+                    "usd": 80000
+                },
+                "orders": 4003,
+                "in_business": 1
+            },
+            "order_process": {
+                "show": true,
+                "steps": [
+                    {
+                        "headline": "Step One",
+                        "icon": "someicon.svg"
+                    },
+                    {
+                        "headline": "Step Two",
+                        "icon": "someicon.svg"
+                    },
+                    {
+                        "headline": "Step Three",
+                        "icon": "someicon.svg"
+                    }
+                ]
+            },
+            "footer": {
+                "show": true,
+                "statement": "Acme.com is owned and operated by Acme Inc., Registration Number: 555928325, Registered Address: 404 Varrock Lane. West Bank, M5V, Gielinor."
+            }
+        },
+        "store": {
+            "currency": {
+                "buying": {
+                    "oldschool": 0.42,
+                    "rs3": 0.07
+                },
+                "selling": {
+                    "oldschool": 0.46,
+                    "rs3": 0.085
+                }
+            },
+            "services": {
+                "infernal_cape": true,
+                "fire_cape": true,
+                "fighter_torso": true
+            } 
+        }
+    }
+]

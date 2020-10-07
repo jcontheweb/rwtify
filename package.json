@@ -1,0 +1,23 @@
+{
+  "name": "rwtify-nuxt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "server": "nodemon server.js"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "body-parser": "^1.19.0",
+    "core-js": "^3.6.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.8",
+    "nuxt": "^2.14.5"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^3.0.2"
+  }
+}
