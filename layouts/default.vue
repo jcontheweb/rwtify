@@ -1,5 +1,5 @@
 <template>
-  <div v-if="$store.state.tenant" class="flex flex-col min-h-screen text-black">
+  <div v-if="$store.state.tenant && $store.state.isAuthorized" class="flex flex-col min-h-screen text-black">
     <Header />
     <main class="flex-1">
       <Nuxt />
@@ -42,9 +42,11 @@
     </div> -->
     <!-- <CookieConsent /> -->
   </div>
+  <ProtectedPage v-else />
 </template>
 
 <script>
+import ProtectedPage from '@/components/ProtectedPage/ProtectedPage'
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 export default {
