@@ -63,6 +63,6 @@ body {
   font-family: "Rubik", sans-serif;
 }
 .container {
-  @apply mx-auto max-w-6xl;
+  @apply mx-auto max-w-6xl px-8;
 }
 </style>

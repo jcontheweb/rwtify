@@ -46,14 +46,10 @@ export default {
   }),
   methods: {
     async submit() {
-      try {
-        await this.$axios.post("justin/page_authorization", { password: this.password });
-        this.$toast.success("Successfully authenticated");
-        this.$store.commit('SET_AUTHORIZED', true)
-      } catch (error) {
-        this.$toast.error("Error while authenticating");
-        this.password = ''
-      }
+      this.loading = true
+      const res = await this.$store.dispatch('authorizePage', this.password)
+      if (res) this.password = ''
+      this.loading = false
     }
   }
 };

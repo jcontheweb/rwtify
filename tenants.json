@@ -12,14 +12,21 @@
         },
         "components": {
             "logo": {
-                "on_light": "",
-                "on_dark": "https://piegp.com/dist/images/landing/piegp-logo.png"
+                "light": "http://localhost:3000/logo_light.png",
+                "dark": "http://localhost:3000/logo_dark.svg"
+            },
+            "menu": {
+                "buy_osrs": true,
+                "buy_rs3": true,
+                "sell_gold": true,
+                "swap_gold": true,
+                "rent_main": true
             },
             "hero": {
                 "show": true,
                 "backgroundImage": "",
                 "backgroundColor": "",
-                "heading": "We are Acmeee",
+                "heading": "We are Acme",
                 "subheading": "AcmeGP for Runescape & Oldschool Runescape"
             },
             "cta": {
@@ -51,16 +58,16 @@
                 "show": true,
                 "steps": [
                     {
-                        "headline": "Step One",
-                        "icon": "someicon.svg"
+                        "headline": "Create An Order",
+                        "icon": "http://localhost:3000/create-order.svg"
                     },
                     {
-                        "headline": "Step Two",
-                        "icon": "someicon.svg"
+                        "headline": "Make Payment",
+                        "icon": "http://localhost:3000/make-payment.svg"
                     },
                     {
-                        "headline": "Step Three",
-                        "icon": "someicon.svg"
+                        "headline": "Collect Your Gold",
+                        "icon": "http://localhost:3000/collect-gold.svg"
                     }
                 ]
             },

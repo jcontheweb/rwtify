@@ -41,7 +41,7 @@
     </div> -->
     <div class="border-t border-black border-opacity-25 py-6">
       <div class="container">
-        <p class="text-sm" v-html="footer.statement"></p>
+        <p class="text-sm text-center" v-html="footer.statement"></p>
       </div>
     </div>
   </footer>

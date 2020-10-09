@@ -11,7 +11,7 @@ export default {
     src() {
       const logo = this.$store.state.tenant.components.logo;
 
-      return this.color == "light" ? logo.on_dark : logo.on_light;
+      return this.color == "light" ? logo.light : logo.dark;
     }
   }
 };

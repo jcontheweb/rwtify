@@ -41,6 +41,8 @@ export default {
 
   toast: {
     position: "top-center",
+    duration: 5000,
+    singleton: true,
     register: [
       // Register custom toasts
       {
