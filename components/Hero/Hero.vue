@@ -1,20 +1,22 @@
 <template>
   <div
-    class="relative py-12 lg:py-32 bg-gray-050 flex flex-col items-center justify-center bg-cover bg-center"
+    class="relative flex flex-col items-center justify-center py-12 bg-center bg-cover lg:py-32 bg-gray-050"
     :style="`background-image:url(${hero.backgroundImage})`"
   >
     <!-- <div class="absolute inset-0 opacity-25" :style="`background: ${hero.backgroundColor}`"></div> -->
     <div class="container relative">
-      <div class="max-w-2xl mx-auto lg:bg-white text-center lg:border-4 border-black lg:p-12">
-        <h1 class="font-semibold uppercase tracking-tight text-5xl">{{hero.heading}}</h1>
-        <p class="text-2xl font-medium mt-4">{{hero.subheading}}</p>
-        <div class="mt-12">
-          <button
-            class="mr-2 focus:outline-none border-2 hover:opacity-75 border-black bg-black text-white px-6 py-4 leading-none font-semibold"
-          >Buy OSRS Gold</button>
-          <button
-            class="focus:outline-none border-2 border-black px-6 py-4 leading-none font-semibold hover:opacity-75"
-          >Buy RS3 Gold</button>
+      <div class="max-w-2xl mx-auto text-center border-black lg:bg-white lg:border-4 lg:p-12">
+        <h1 class="text-5xl font-semibold tracking-tight uppercase">{{hero.heading}}</h1>
+        <p class="mt-4 text-2xl font-medium">{{hero.subheading}}</p>
+        <div class="flex justify-center mt-12">
+          <nuxt-link
+            to="/buy-osrs-gold"
+            class="block px-6 py-4 mr-2 font-semibold leading-none text-white bg-black border-2 border-black focus:outline-none hover:opacity-75"
+          >Buy OSRS Gold</nuxt-link>
+          <nuxt-link
+            to="/buy-rs3-gold"
+            class="block px-6 py-4 font-semibold leading-none border-2 border-black focus:outline-none hover:opacity-75"
+          >Buy RS3 Gold</nuxt-link>
         </div>
         <div class="mt-16">
           <StatisticBar v-if="$store.state.tenant.components.statistics.show" />

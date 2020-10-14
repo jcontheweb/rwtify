@@ -1,7 +1,7 @@
 <template>
-  <a href="/">
+  <nuxt-link to="/">
     <img :src="src" alt />
-  </a>
+  </nuxt-link>
 </template>
 
 <script>

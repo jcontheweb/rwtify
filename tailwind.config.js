@@ -202,6 +202,8 @@ module.exports = {
       auto: 'auto',
       cover: 'cover',
       contain: 'contain',
+      '1/2': '50%',
+      '2/3': '75%',
     },
     borderColor: theme => ({
       ...theme('colors'),
@@ -316,6 +318,8 @@ module.exports = {
     }),
     inset: {
       '0': '0',
+      '100': '100%',
+      '-100%': '-100%',
       auto: 'auto',
     },
     letterSpacing: {
@@ -703,7 +707,7 @@ module.exports = {
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
     borderCollapse: ['responsive'],
-    borderColor: ['responsive', 'hover', 'focus'],
+    borderColor: ['responsive', 'hover', 'focus', 'focus-within'],
     borderOpacity: ['responsive', 'hover', 'focus'],
     borderRadius: ['responsive'],
     borderStyle: ['responsive'],

@@ -1,7 +1,7 @@
 [
     {
         "tenant": "justin",
-        "protected": true,
+        "protected": false,
         "password": "test123",
         "uuid": "da02f42a-659e-4ab1-b565-13008c2cc38a",
         "meta": {
@@ -10,6 +10,100 @@
             "name": "",
             "description": ""
         },
+        "currencies": [
+            {
+                "name": "USD",
+                "symbol": "$"
+            },
+            {
+                "name": "CAD",
+                "symbol": "$"
+            },
+            {
+                "name": "AUD",
+                "symbol": "$"
+            },
+            {
+                "name": "NZD",
+                "symbol": "$"
+            },
+            {
+                "name": "GBP",
+                "symbol": "£"
+            },
+            {
+                "name": "EUR",
+                "symbol": "€"
+            }
+        ],
+        "payments_receive": [
+            {
+                "name": "Trustly (Instant bank transfer)",
+                "icon": "/trustly-128.png"
+            },
+            {
+                "name": "VISA",
+                "icon": "/visa-128.png"
+            },
+            {
+                "name": "Mastercard",
+                "icon": "/mastercard-128.png"
+            },
+            {
+                "name": "Skrill",
+                "icon": "/skrill-128.png"
+            },
+            {
+                "name": "Paysafecard",
+                "icon": "/paysafe-128.png"
+            },
+            {
+                "name": "Bitcoin",
+                "icon": "/bitcoin-128.png"
+            },
+            {
+                "name": "iDeal",
+                "icon": "/ideal-128.png"
+            },
+            {
+                "name": "Neteller",
+                "icon": "/neteller-128.png"
+            }
+        ],
+        "payments_send": [
+            {
+                "name": "Bitcoin (BTC)",
+                "icon": "/bitcoin-128.png"
+            },
+            {
+                "name": "Coinbase",
+                "icon": "/coinbase-128.png"
+            },
+            {
+                "name": "Interac",
+                "icon": "/interac-128.png"
+            },
+            {
+                "name": "Localbitcoins",
+                "icon": "/localbitcoins-128.png"
+            },
+            {
+                "name": "Ethereum (ETH)",
+                "icon": "/ethereum-128.png"
+            },
+            {
+                "name": "Bitcoin Cash (BCH)",
+                "icon": "/bitcoin-cash-128.png"
+            },
+            {
+                "name": "USD Coin (USDC)",
+                "icon": "/usd-coin-128.png"
+            },
+            {
+                "name": "Litecoin (LTC)",
+                "icon": "/litecoin-128-3.png"
+            }
+        ],
         "components": {
             "logo": {
                 "light": "http://localhost:3000/logo_light.png",
@@ -19,8 +113,8 @@
                 "buy_osrs": true,
                 "buy_rs3": true,
                 "sell_gold": true,
-                "swap_gold": true,
-                "rent_main": true
+                "swap_gold": false,
+                "rent_main": false
             },
             "hero": {
                 "show": true,
@@ -79,11 +173,11 @@
         "store": {
             "currency": {
                 "buying": {
-                    "oldschool": 0.42,
-                    "rs3": 0.07
+                    "osrs": 0.42,
+                    "rs3": 0.095
                 },
                 "selling": {
-                    "oldschool": 0.46,
+                    "osrs": 0.46,
                     "rs3": 0.085
                 }
             },

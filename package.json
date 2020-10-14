@@ -13,6 +13,7 @@
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/toast": "^3.3.1",
     "body-parser": "^1.19.0",
+    "cookie-universal-nuxt": "^2.1.4",
     "core-js": "^3.6.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",
